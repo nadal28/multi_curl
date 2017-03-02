@@ -54,4 +54,18 @@ function multiRequest($data, $options = array()) {
  
   return $result;
 }
+
+//===================EXAMPLE===================
+
+$data = array(
+  'http://search.yahooapis.com/VideoSearchService/V1/videoSearch?appid=YahooDemo&query=Pearl+Jam&output=json',
+  'http://search.yahooapis.com/ImageSearchService/V1/imageSearch?appid=YahooDemo&query=Pearl+Jam&output=json',
+  'http://search.yahooapis.com/AudioSearchService/V1/artistSearch?appid=YahooDemo&artist=Pearl+Jam&output=json'
+);
+$r = multiRequest($data);
+ 
+echo '<pre>';
+print_r($r);
+
+
 ?>
