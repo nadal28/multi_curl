@@ -1,3 +1,4 @@
+<?php
 function multiRequest($data, $options = array()) {
  
   // array of curl handles
@@ -53,3 +54,4 @@ function multiRequest($data, $options = array()) {
  
   return $result;
 }
+?>
